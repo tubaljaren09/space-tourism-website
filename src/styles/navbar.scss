@@ -8,5 +8,45 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .sidenav {
+      color: #fff;
+      position: fixed;
+      right: -100%;
+      top: 0;
+      width: 70%;
+      height: 100%;
+      backdrop-filter: blur(30px);
+      ul {
+        list-style: none;
+        padding-top: 90px;
+        li {
+          padding: 20px;
+        }
+      }
+    }
+    .sidenav-show {
+      color: #fff;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 70%;
+      height: 100%;
+      backdrop-filter: blur(30px);
+      display: block;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 500ms;
+      .close-icon {
+        position: fixed;
+        right: 30px;
+        top: 40px;
+      }
+      ul {
+        list-style: none;
+        padding-top: 90px;
+        li {
+          padding: 20px;
+        }
+      }
+    }
   }
 }
