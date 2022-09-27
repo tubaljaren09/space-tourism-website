@@ -1,0 +1,45 @@
+.home-main {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  .home-container {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .greetings {
+      h1 {
+        font-family: "Bellefair";
+        font-size: 80px;
+        margin: 25px 0;
+        font-weight: 400;
+      }
+      h2 {
+        font-family: "Barlow Condensed";
+        font-size: 16px;
+        color: #d0d6f9;
+        font-weight: 300;
+        letter-spacing: 4px;
+      }
+      p {
+        font-family: "Barlow";
+        color: #d0d6f9;
+        word-spacing: 2px;
+        line-height: 25px;
+        font-size: 15px;
+      }
+    }
+    button {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      border: none;
+      font-size: 20px;
+      font-family: "Bellefair";
+    }
+  }
+}
