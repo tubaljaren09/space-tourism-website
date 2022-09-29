@@ -25,7 +25,6 @@
       }
     }
     .sidenav-show {
-      color: #fff;
       position: fixed;
       right: 0;
       top: 0;
@@ -45,6 +44,10 @@
         padding-top: 90px;
         li {
           padding: 20px;
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
         }
       }
     }

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 // Images
-import AppIcon from "../assets/app.png";
-import BurgerIcon from "../assets/burger.png";
-import CloseIcon from "../assets/close.svg";
+import Hamburger from "../assets/shared/icon-hamburger.svg";
+import Close from "../assets/shared/icon-close.svg";
+import Logo from "../assets/shared/logo.svg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -15,20 +16,36 @@ const Navbar = () => {
   return (
     <div className="navbar-main">
       <div className="navbar-container">
-        <img src={AppIcon} alt="App-Icon" />
-        <img onClick={handleNav} src={BurgerIcon} alt="Burger-Icon" />
+        <img src={Logo} alt="App-Icon" />
+        <img onClick={handleNav} src={Hamburger} alt="Burger-Icon" />
         <div className={nav ? "sidenav-show" : "sidenav"}>
           <img
             onClick={handleNav}
             className="close-icon"
-            src={CloseIcon}
+            src={Close}
             alt="Close-Icon"
           />
           <ul>
-            <li>00 HOME</li>
-            <li>01 DESTINATION</li>
-            <li>02 CREW</li>
-            <li>03 TECHNOLOGY</li>
+            <li>
+              <NavLink className="nav-link" onClick={handleNav} to="/home">
+                00 HOME
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="nav-link"
+                onClick={handleNav}
+                to="/destination"
+              >
+                01 DESTINATION
+              </NavLink>
+            </li>
+            <li>
+              <NavLink>02 CREW</NavLink>
+            </li>
+            <li>
+              <NavLink>03 TECHNOLOGY</NavLink>
+            </li>
           </ul>
         </div>
       </div>
