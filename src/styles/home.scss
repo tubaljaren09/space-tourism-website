@@ -1,6 +1,7 @@
 .home-main {
   grid-column: 1/2;
   grid-row: 2/3;
+  animation: transitionIn 700ms;
   .home-container {
     width: 80%;
     margin: auto;
@@ -41,5 +42,16 @@
       font-size: 20px;
       font-family: "Bellefair";
     }
+  }
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

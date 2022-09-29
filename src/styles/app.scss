@@ -3,7 +3,8 @@
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.app-mainhome {
+.space-tourism-website,
+.home {
   width: 100%;
   height: 100vh;
   display: grid;
@@ -16,7 +17,7 @@
   @import "./home.scss";
   @import "./destination.scss";
 }
-.app-maindestination {
+.destination {
   width: 100%;
   height: 100vh;
   display: grid;

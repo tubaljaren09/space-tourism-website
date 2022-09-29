@@ -13,9 +13,10 @@ const App = () => {
   const path = useLocation().pathname;
   const location = path.split("/")[1];
   return (
-    <div className={"app-main" + location}>
+    <div className={location}>
       <Navbar />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/space-tourism-website" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/destination" element={<Destination />} />

@@ -32,7 +32,7 @@ const Destination = () => {
           <span>01</span> PICK YOUR DESTINATION
         </h2>
         <div className="content-container">
-          <div>
+          <div className="images">
             {imageClicked.Moon && (
               <img src={Moon} width="170px" height="170px" alt="MoonPic" />
             )}
@@ -72,8 +72,13 @@ const Destination = () => {
               TITAN
             </li>
           </ul>
-          <h1>MOON</h1>
-          <div>
+          <div className="names">
+            {imageClicked.Moon && <h1>Moon</h1>}
+            {imageClicked.Mars && <h1>Mars</h1>}
+            {imageClicked.Europa && <h1>Europa</h1>}
+            {imageClicked.Titan && <h1>Titan</h1>}
+          </div>
+          <div className="paragraphs">
             {imageClicked.Moon && (
               <p>
                 See our planet as you’ve never seen it before. A perfect
@@ -107,7 +112,7 @@ const Destination = () => {
             )}
           </div>
           <hr />
-          <div>
+          <div className="distance">
             {imageClicked.Moon && (
               <div>
                 <h3>
