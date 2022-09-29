@@ -12,6 +12,7 @@
   grid-template-rows: 10% 90%;
   background: url("../assets/home/background-home-mobile.jpg") no-repeat center;
   background-size: cover;
+  overflow: auto;
 
   @import "./navbar.scss";
   @import "./home.scss";
@@ -26,6 +27,7 @@
   background: url("../assets/destination/background-destination-mobile.jpg")
     no-repeat center;
   background-size: cover;
+  overflow: auto;
 
   @import "./navbar.scss";
   @import "./home.scss";
