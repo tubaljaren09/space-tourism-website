@@ -3,28 +3,13 @@
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.space-tourism-website,
-.home {
+.app-main {
   width: 100%;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 10% auto;
   background: url("../assets/home/background-home-mobile.jpg") no-repeat center;
-  background-size: cover;
-
-  @import "./navbar.scss";
-  @import "./home.scss";
-  @import "./destination.scss";
-}
-.destination {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 10% 90%;
-  background: url("../assets/destination/background-destination-mobile.jpg")
-    no-repeat center;
   background-size: cover;
 
   @import "./navbar.scss";

@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 // Styles
 import "./styles/app.scss";
@@ -10,10 +10,8 @@ import Home from "./components/Home";
 import Destination from "./components/Destination";
 
 const App = () => {
-  const path = useLocation().pathname;
-  const location = path.split("/")[1];
   return (
-    <div className={location}>
+    <div className="app-main">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
