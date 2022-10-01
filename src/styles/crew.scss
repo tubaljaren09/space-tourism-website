@@ -1,0 +1,88 @@
+.crew-main {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background: url("../assets/crew/background-crew-mobile.jpg") repeat center;
+  background-size: cover;
+  animation: transitionIn 700ms;
+  .crew-container {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+
+    h2 {
+      font-family: "Barlow Condensed";
+      font-size: 16px;
+      letter-spacing: 4px;
+      font-weight: 400;
+      span {
+        font-family: "Barlow Condensed";
+        font-size: 16px;
+        letter-spacing: 4px;
+        font-weight: bold;
+        opacity: 0.2;
+      }
+    }
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .images {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid rgba(151, 151, 151, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: transitionIn 700ms;
+      }
+      .dots-container {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        img {
+          opacity: 0.2;
+        }
+        img.active {
+          opacity: 1;
+        }
+      }
+      .title {
+        h2 {
+          font-family: "Bellefair";
+          font-size: 16px;
+          opacity: 0.5;
+          letter-spacing: 1px;
+          font-weight: 400;
+          margin-bottom: 10px;
+        }
+        h1 {
+          font-family: "Bellefair";
+          font-size: 24px;
+          font-weight: 400;
+          animation: transitionIn 700ms;
+        }
+      }
+      .paragraphs {
+        p {
+          font-family: "Barlow";
+          font-size: 15px;
+          color: #d0d6f9;
+          line-height: 25px;
+          word-spacing: 2px;
+          animation: transitionIn 700ms;
+        }
+      }
+    }
+  }
+}

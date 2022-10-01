@@ -45,16 +45,33 @@
       }
       .names {
         h1 {
+          font-family: "Bellefair";
+          font-size: 56px;
+          font-weight: 400;
           animation: transitionIn 700ms;
         }
       }
       .paragraphs {
         p {
+          font-family: "Barlow";
+          font-size: 15px;
+          color: #d0d6f9;
+          line-height: 25px;
+          word-spacing: 2px;
           animation: transitionIn 700ms;
         }
       }
       .distance {
         h3 {
+          font-family: "Barlow Condensed";
+          font-size: 14px;
+          font-weight: 400;
+          color: #d0d6f9;
+          span {
+            font-family: "Bellefair";
+            font-size: 28px;
+            color: #fff;
+          }
           animation: transitionIn 700ms;
         }
       }
@@ -73,44 +90,33 @@
           border-bottom: 2px solid #fff;
         }
       }
-      h1 {
-        font-family: "Bellefair";
-        font-size: 56px;
-        font-weight: 400;
-      }
-      p {
-        font-family: "Barlow";
-        font-size: 15px;
-        color: #d0d6f9;
-        line-height: 25px;
-        word-spacing: 2px;
-      }
+      // h1 {
+      //   font-family: "Bellefair";
+      //   font-size: 56px;
+      //   font-weight: 400;
+      // }
+      // p {
+      //   font-family: "Barlow";
+      //   font-size: 15px;
+      //   color: #d0d6f9;
+      //   line-height: 25px;
+      //   word-spacing: 2px;
+      // }
       hr {
         width: 100%;
-        opacity: 20%;
+        opacity: 0.2;
       }
-      h3 {
-        font-family: "Barlow Condensed";
-        font-size: 14px;
-        font-weight: 400;
-        color: #d0d6f9;
-        span {
-          font-family: "Bellefair";
-          font-size: 28px;
-          color: #fff;
-        }
-      }
+      // h3 {
+      //   font-family: "Barlow Condensed";
+      //   font-size: 14px;
+      //   font-weight: 400;
+      //   color: #d0d6f9;
+      //   span {
+      //     font-family: "Bellefair";
+      //     font-size: 28px;
+      //     color: #fff;
+      //   }
+      // }
     }
-  }
-}
-@keyframes transitionIn {
-  from {
-    opacity: 0;
-    transform: translateX(-10deg);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
   }
 }

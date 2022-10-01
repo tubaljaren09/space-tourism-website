@@ -41,7 +41,9 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink>02 CREW</NavLink>
+              <NavLink className="nav-link" onClick={handleNav} to="/crew">
+                02 CREW
+              </NavLink>
             </li>
             <li>
               <NavLink>03 TECHNOLOGY</NavLink>

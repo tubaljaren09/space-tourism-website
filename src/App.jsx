@@ -8,6 +8,7 @@ import "./styles/app.scss";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Destination from "./components/Destination";
+import Crew from "./components/Crew";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/space-tourism-website" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/destination" element={<Destination />} />
+        <Route path="/crew" element={<Crew />} />
       </Routes>
     </div>
   );

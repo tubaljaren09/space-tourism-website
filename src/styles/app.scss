@@ -15,4 +15,16 @@
   @import "./navbar.scss";
   @import "./home.scss";
   @import "./destination.scss";
+  @import "./crew.scss";
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
