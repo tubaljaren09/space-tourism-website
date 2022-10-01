@@ -46,7 +46,13 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink>03 TECHNOLOGY</NavLink>
+              <NavLink
+                className="nav-link"
+                onClick={handleNav}
+                to="/technology"
+              >
+                03 TECHNOLOGY
+              </NavLink>
             </li>
           </ul>
         </div>
