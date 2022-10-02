@@ -73,10 +73,10 @@ const Destination = () => {
             </li>
           </ul>
           <div className="names">
-            {imageClicked.Moon && <h1>Moon</h1>}
-            {imageClicked.Mars && <h1>Mars</h1>}
-            {imageClicked.Europa && <h1>Europa</h1>}
-            {imageClicked.Titan && <h1>Titan</h1>}
+            {imageClicked.Moon && <h1>MOON</h1>}
+            {imageClicked.Mars && <h1>MARS</h1>}
+            {imageClicked.Europa && <h1>EUROPA</h1>}
+            {imageClicked.Titan && <h1>TITAN</h1>}
           </div>
           <div className="paragraphs">
             {imageClicked.Moon && (
@@ -114,7 +114,7 @@ const Destination = () => {
           <hr />
           <div className="distance">
             {imageClicked.Moon && (
-              <div>
+              <div className="distance-container">
                 <h3>
                   AVG. DISTANCE
                   <br />
@@ -131,7 +131,7 @@ const Destination = () => {
               </div>
             )}
             {imageClicked.Mars && (
-              <div>
+              <div className="distance-container">
                 <h3>
                   AVG. DISTANCE
                   <br />
@@ -148,7 +148,7 @@ const Destination = () => {
               </div>
             )}
             {imageClicked.Europa && (
-              <div>
+              <div className="distance-container">
                 <h3>
                   AVG. DISTANCE
                   <br />
@@ -165,7 +165,7 @@ const Destination = () => {
               </div>
             )}
             {imageClicked.Titan && (
-              <div>
+              <div className="distance-container">
                 <h3>
                   AVG. DISTANCE
                   <br />

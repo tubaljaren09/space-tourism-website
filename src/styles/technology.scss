@@ -30,6 +30,7 @@
       }
     }
     .images {
+      width: 100%;
       img {
         animation: transitionIn 700ms;
       }
@@ -83,6 +84,21 @@
           line-height: 25px;
           word-spacing: 2px;
           animation: transitionIn 700ms;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .technology-main {
+    background: url("../assets/technology/background-technology-tablet.jpg")
+      repeat center;
+    background-size: cover;
+
+    .technology-container {
+      .images {
+        img {
+          height: 300px;
         }
       }
     }

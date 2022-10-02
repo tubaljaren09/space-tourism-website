@@ -59,30 +59,64 @@
           opacity: 1;
         }
       }
-      .title {
-        h2 {
-          font-family: "Bellefair";
-          font-size: 16px;
-          opacity: 0.5;
-          letter-spacing: 1px;
-          font-weight: 400;
-          margin-bottom: 10px;
+      .reverse {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .title {
+          h2 {
+            font-family: "Bellefair";
+            font-size: 16px;
+            opacity: 0.5;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin-bottom: 10px;
+          }
+          h1 {
+            font-family: "Bellefair";
+            font-size: 24px;
+            font-weight: 400;
+            animation: transitionIn 700ms;
+          }
         }
-        h1 {
-          font-family: "Bellefair";
-          font-size: 24px;
-          font-weight: 400;
-          animation: transitionIn 700ms;
+        .paragraphs {
+          p {
+            font-family: "Barlow";
+            font-size: 15px;
+            color: #d0d6f9;
+            line-height: 25px;
+            word-spacing: 2px;
+            animation: transitionIn 700ms;
+          }
         }
       }
-      .paragraphs {
-        p {
-          font-family: "Barlow";
-          font-size: 15px;
-          color: #d0d6f9;
-          line-height: 25px;
-          word-spacing: 2px;
-          animation: transitionIn 700ms;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .crew-main {
+    background: url("../assets/crew/background-crew-tablet.jpg") repeat center;
+    background-size: cover;
+    .crew-container {
+      .content-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .images {
+          width: 100%;
+          height: 460px;
+          border-bottom: 2px solid rgba(151, 151, 151, 0.2);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          img {
+            width: 450px;
+            height: 460px;
+            animation: transitionIn 700ms;
+          }
         }
       }
     }

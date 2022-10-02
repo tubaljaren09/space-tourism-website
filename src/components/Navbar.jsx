@@ -17,7 +17,36 @@ const Navbar = () => {
     <div className="navbar-main">
       <div className="navbar-container">
         <img src={Logo} alt="App-Icon" />
-        <img onClick={handleNav} src={Hamburger} alt="Burger-Icon" />
+        <div className="navbar-items">
+          <ul>
+            <li>
+              <NavLink className="nav-link" to="/home">
+                HOME
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="nav-link" to="/destination">
+                DESTINATION
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="nav-link" to="/crew">
+                CREW
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="nav-link" to="/technology">
+                TECHNOLOGY
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <img
+          className="burger-icon"
+          onClick={handleNav}
+          src={Hamburger}
+          alt="Burger-Icon"
+        />
         <div className={nav ? "sidenav-show" : "sidenav"}>
           <img
             onClick={handleNav}
