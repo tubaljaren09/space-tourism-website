@@ -44,3 +44,49 @@
     }
   }
 }
+@media (min-width: 1200px) {
+  .home-main {
+    .home-container {
+      width: 80%;
+      margin: auto;
+      height: 100%;
+      color: #fff;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      .greetings {
+        width: 40%;
+        h1 {
+          font-family: "Bellefair";
+          font-size: 120px;
+          margin: 25px 0;
+          font-weight: 400;
+        }
+        h2 {
+          font-family: "Barlow Condensed";
+          font-size: 20px;
+          color: #d0d6f9;
+          font-weight: 300;
+          letter-spacing: 4px;
+        }
+        p {
+          font-family: "Barlow";
+          color: #d0d6f9;
+          word-spacing: 2px;
+          line-height: 30px;
+          font-size: 15px;
+        }
+      }
+      button {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        border: none;
+        font-size: 30px;
+        font-family: "Bellefair";
+      }
+    }
+  }
+}

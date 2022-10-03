@@ -48,45 +48,55 @@
           animation: transitionIn 700ms;
         }
       }
-      .dots-container {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        img {
-          opacity: 0.2;
-        }
-        img.active {
-          opacity: 1;
-        }
-      }
-      .reverse {
+      .details {
         display: flex;
         flex-direction: column;
-        gap: 50px;
-        .title {
-          h2 {
-            font-family: "Bellefair";
-            font-size: 16px;
-            opacity: 0.5;
-            letter-spacing: 1px;
-            font-weight: 400;
-            margin-bottom: 10px;
+        gap: 20px;
+        .container {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 50px;
+          .dots-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            img {
+              opacity: 0.2;
+            }
+            img.active {
+              opacity: 1;
+            }
           }
-          h1 {
-            font-family: "Bellefair";
-            font-size: 24px;
-            font-weight: 400;
-            animation: transitionIn 700ms;
-          }
-        }
-        .paragraphs {
-          p {
-            font-family: "Barlow";
-            font-size: 15px;
-            color: #d0d6f9;
-            line-height: 25px;
-            word-spacing: 2px;
-            animation: transitionIn 700ms;
+          .reverse {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .title {
+              h2 {
+                font-family: "Bellefair";
+                font-size: 16px;
+                opacity: 0.5;
+                letter-spacing: 1px;
+                font-weight: 400;
+                margin-bottom: 10px;
+              }
+              h1 {
+                font-family: "Bellefair";
+                font-size: 24px;
+                font-weight: 400;
+                animation: transitionIn 700ms;
+              }
+            }
+            .paragraphs {
+              p {
+                font-family: "Barlow";
+                font-size: 15px;
+                color: #d0d6f9;
+                line-height: 25px;
+                word-spacing: 2px;
+                animation: transitionIn 700ms;
+              }
+            }
           }
         }
       }
@@ -116,6 +126,103 @@
             width: 450px;
             height: 460px;
             animation: transitionIn 700ms;
+          }
+        }
+        .details {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 20px;
+          .container {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 50px;
+            .reverse {
+              width: 70%;
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .crew-main {
+    background: url("../assets/crew/background-crew-desktop.jpg") repeat center;
+    background-size: cover;
+    animation: none;
+    .crew-container {
+      padding: 50px 0;
+      .content-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .images {
+          width: 600px;
+          height: 600px;
+          border-bottom: 2px solid rgba(151, 151, 151, 0.2);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          img {
+            width: 600px;
+            height: 600px;
+            animation: transitionIn 700ms;
+          }
+        }
+        .details {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          .container {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 50px;
+            .dots-container {
+              margin-top: 50px;
+            }
+            .reverse {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              width: 400px;
+              margin: unset;
+              .title {
+                text-align: left;
+                h2 {
+                  font-family: "Bellefair";
+                  font-size: 22px;
+                  opacity: 0.5;
+                  letter-spacing: 1px;
+                  font-weight: 400;
+                  margin-bottom: 10px;
+                }
+                h1 {
+                  font-family: "Bellefair";
+                  font-size: 40px;
+                  font-weight: 400;
+                  animation: transitionIn 700ms;
+                }
+              }
+              .paragraphs {
+                text-align: left;
+                p {
+                  font-family: "Barlow";
+                  font-size: 15px;
+                  color: #d0d6f9;
+                  line-height: 30px;
+                  word-spacing: 2px;
+                  animation: transitionIn 700ms;
+                }
+              }
+            }
           }
         }
       }

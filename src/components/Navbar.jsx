@@ -16,7 +16,8 @@ const Navbar = () => {
   return (
     <div className="navbar-main">
       <div className="navbar-container">
-        <img src={Logo} alt="App-Icon" />
+        <img className="app-logo" src={Logo} alt="App-Icon" />
+        <hr />
         <div className="navbar-items">
           <ul>
             <li>

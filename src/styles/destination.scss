@@ -43,56 +43,68 @@
           animation: transitionIn 700ms;
         }
       }
-      .names {
-        h1 {
-          font-family: "Bellefair";
-          font-size: 56px;
-          font-weight: 400;
-          animation: transitionIn 700ms;
-        }
-      }
-      .paragraphs {
-        p {
-          font-family: "Barlow";
-          font-size: 15px;
-          color: #d0d6f9;
-          line-height: 25px;
-          word-spacing: 2px;
-          animation: transitionIn 700ms;
-        }
-      }
-      .distance {
-        .distance-container {
-          h3 {
-            font-family: "Barlow Condensed";
-            font-size: 14px;
+      .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .names {
+          h1 {
+            font-family: "Bellefair";
+            font-size: 56px;
             font-weight: 400;
-            color: #d0d6f9;
-            span {
-              font-family: "Bellefair";
-              font-size: 28px;
-              color: #fff;
-            }
             animation: transitionIn 700ms;
           }
         }
-      }
-      ul {
-        list-style: none;
-        display: flex;
-        gap: 10px;
-        li {
-          font-family: "Barlow Condensed";
-          font-size: 14px;
-          letter-spacing: 3px;
-          color: #d0d6f9;
-          cursor: pointer;
+        .paragraphs {
+          p {
+            font-family: "Barlow";
+            font-size: 15px;
+            color: #d0d6f9;
+            line-height: 25px;
+            word-spacing: 2px;
+            animation: transitionIn 700ms;
+          }
         }
-        .active {
-          padding-bottom: 2px;
-          border-bottom: 2px solid #fff;
+        hr {
+          width: 100%;
+          opacity: 0.2;
+        }
+        .distance {
+          .distance-container {
+            h3 {
+              font-family: "Barlow Condensed";
+              font-size: 14px;
+              font-weight: 400;
+              color: #d0d6f9;
+              span {
+                font-family: "Bellefair";
+                font-size: 28px;
+                color: #fff;
+              }
+              animation: transitionIn 700ms;
+            }
+          }
+        }
+        ul {
+          list-style: none;
+          display: flex;
+          gap: 10px;
+          li {
+            font-family: "Barlow Condensed";
+            font-size: 14px;
+            letter-spacing: 3px;
+            color: #d0d6f9;
+            cursor: pointer;
+          }
+          .active {
+            padding-bottom: 2px;
+            border-bottom: 2px solid #fff;
+          }
         }
       }
+
       // h1 {
       //   font-family: "Bellefair";
       //   font-size: 56px;
@@ -105,10 +117,7 @@
       //   line-height: 25px;
       //   word-spacing: 2px;
       // }
-      hr {
-        width: 100%;
-        opacity: 0.2;
-      }
+
       // h3 {
       //   font-family: "Barlow Condensed";
       //   font-size: 14px;
@@ -136,15 +145,87 @@
             height: 300px;
           }
         }
-        ul {
-          list-style: none;
-          display: flex;
-          gap: 40px;
-        }
-        .distance {
-          .distance-container {
+        .details {
+          ul {
+            list-style: none;
             display: flex;
-            gap: 50px;
+            gap: 40px;
+          }
+          .distance {
+            .distance-container {
+              display: flex;
+              gap: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .destination-main {
+    background: url("../assets/destination/background-destination-desktop.jpg")
+      repeat center;
+    background-size: cover;
+    animation: none;
+    .destination-container {
+      text-align: left;
+      .content-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        .images {
+          img {
+            width: 450px;
+            height: 450px;
+          }
+        }
+        .details {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 40px;
+          width: 40%;
+          .names {
+            h1 {
+              font-family: "Bellefair";
+              font-size: 70px;
+              font-weight: 400;
+              animation: transitionIn 700ms;
+            }
+          }
+          ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            li {
+              font-family: "Barlow Condensed";
+              font-size: 20px;
+              letter-spacing: 3px;
+              color: #d0d6f9;
+              cursor: pointer;
+            }
+          }
+          .distance {
+            .distance-container {
+              display: flex;
+              gap: 50px;
+              h3 {
+                font-family: "Barlow Condensed";
+                font-size: 14px;
+                font-weight: 400;
+                color: #d0d6f9;
+                span {
+                  font-family: "Bellefair";
+                  font-size: 28px;
+                  color: #fff;
+                }
+                animation: transitionIn 700ms;
+              }
+            }
           }
         }
       }
